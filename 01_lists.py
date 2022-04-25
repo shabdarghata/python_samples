@@ -1,14 +1,11 @@
-#https://www.w3schools.com/python/python_tuples_join.asp
-# This program adds two numbers
 
-num1 = 1.5
-num2 = 6.3
-#Test
-# Add two numbers
-sum = num1 + num2
+#Lists are used to store multiple items in a single variable.
 
-# Display the sum
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+#Lists are one of 4 built-in data types in Python used to store collections of data, 
+# the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+#Lists are created using square brackets:
+
 
 thislist = ["apple", "banana", "cherry"]
 print(thislist)

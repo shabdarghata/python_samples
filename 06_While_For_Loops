@@ -1,0 +1,33 @@
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+#With the continue statement we can stop the current iteration, and continue with the next:
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+
+#For loop
+  fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+#Looping Through a String
+#Even strings are iterable objects, they contain a sequence of characters:
+#Example
+#Loop through the letters in the word "banana":
+
+for x in "banana":
+  print(x)  
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
