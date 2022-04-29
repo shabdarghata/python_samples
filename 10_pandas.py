@@ -71,6 +71,9 @@ print(pd.options.display.max_rows)
 #Change default value of max rows
 pd.options.display.max_rows=100
 print(df)
+#df.head()
 
 #Read JSON
-#df2=pd.read_json()
+df2=pd.read_json("json/sample1.json", typ='series')
+#df2.head()
+print(df2)
