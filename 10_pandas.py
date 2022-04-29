@@ -32,3 +32,45 @@ print(bseries["y"])
 #Read csv file
 df = pd.read_csv("csv/aes_pv.csv")
 print(df)
+
+#Create a simple Pandas Series from a dictionary:
+mydict = {
+    "day1" : "420",
+    "day2" : "500",
+    "day3" : "600"
+}
+
+s=pd.Series(mydict);
+print(s)
+
+#Create a DataFrame from two Series:
+s2 = {
+    "calories": [1,2,3],
+    "names": ["a","b","c"]
+}
+d2 = pd.DataFrame(s2)
+print(d2)
+
+#Locate Row
+print(d2.loc[0])
+
+#Return row 0 and 1:
+print(d2.loc[[0,1]])
+
+#Add a list of names to give each row a name:
+d3 = pd.DataFrame(s2,index=["x","y","z"])
+print(d3)
+
+#Locate row using index name
+print(d3.loc["z"])
+print(d3.loc[["y","z"]])
+
+#You can check your system's maximum rows with the pd.options.display.max_rows statement.
+print(pd.options.display.max_rows)
+
+#Change default value of max rows
+pd.options.display.max_rows=100
+print(df)
+
+#Read JSON
+#df2=pd.read_json()
