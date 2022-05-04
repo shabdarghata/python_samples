@@ -40,3 +40,13 @@ print(df)
 df["Total"]=df["Units"]*df["Unit Cost"]
 print(df)
 
+#Delete row 13
+df.drop(13,inplace=True)
+print(df)
+
+#Look at duplicate rows
+print(df.duplicated())
+
+#Remove duplicate row
+df.drop_duplicates(inplace=True)
+print(df)
