@@ -77,3 +77,7 @@ print(df)
 df2=pd.read_json("json/sample1.json", typ='series')
 #df2.head()
 print(df2)
+
+#Analyzing data
+print(df.head(10))
+print(df.info())
