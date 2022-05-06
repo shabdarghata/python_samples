@@ -12,3 +12,9 @@ dfpls=pd.concat(pls,axis=1)
 print(dfpls)
 dfpls.plot()
 pl.show()
+
+pl.bar(df.index.values,df["Pulse"])
+pl.show()
+
+pl.scatter(df.index.values,df["Maxpulse"])
+pl.show()
